@@ -52,3 +52,10 @@ print(f"Recommended songs in the {genre} genre based on your liking of {artist}:
 for i,recommendation in enumerate(recommendations):
     print(f'{i+1}: {recommendation}')
 
+'''
+Output:
+Recommended songs in the blues genre based on your liking of B.B. King:
+1: Eric Clapton
+2: Gary Moore
+3: Stevie Ray Vaughan
+'''
