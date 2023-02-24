@@ -37,7 +37,7 @@ def recommend_songs(genre:str, artist:str, k:int=3) -> list:
     similarities.sort(key=lambda x: x[1], reverse=True)
     top_artists = [a for a, sim in similarities[:k]]
     
-    # Get a list of recommended songs from the top artists
+    # Get a list of recommended artists from the top artists
     recommendations = []
     for a in top_artists:
         recommendations.append(a)
@@ -48,13 +48,13 @@ def recommend_songs(genre:str, artist:str, k:int=3) -> list:
 genre = 'blues'
 artist = 'B.B. King'
 recommendations = recommend_songs(genre, artist, k=3)
-print(f"Recommended songs in the {genre} genre based on your liking of {artist}:")
+print(f"Recommended artist in the {genre} genre based on your liking of {artist}:")
 for i,recommendation in enumerate(recommendations):
     print(f'{i+1}: {recommendation}')
 
 '''
 Output:
-Recommended songs in the blues genre based on your liking of B.B. King:
+Recommended artist in the blues genre based on your liking of B.B. King:
 1: Eric Clapton
 2: Gary Moore
 3: Stevie Ray Vaughan
