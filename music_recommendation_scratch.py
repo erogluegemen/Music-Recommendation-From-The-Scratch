@@ -54,7 +54,7 @@ for i,recommendation in enumerate(recommendations):
 
 '''
 Output:
-Recommended artist in the blues genre based on your liking of B.B. King:
+Recommended artists in the blues genre based on your liking of B.B. King:
 1: Eric Clapton
 2: Gary Moore
 3: Stevie Ray Vaughan
